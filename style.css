@@ -137,6 +137,9 @@ margin-bottom: 10px;
   flex-direction: column;
   margin: 20px 0px 0px 0px;
 }
+.skills .description{
+  padding: 10px;
+}
 .skills ul{
   display: flex;
  justify-content: center;
