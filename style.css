@@ -131,6 +131,9 @@ margin-bottom: 10px;
   justify-content: center;
   flex-direction: column;
 }
+.skills li{
+  list-style: none;
+}
 @keyframes nameAnimation {
   0%,
   10%,
