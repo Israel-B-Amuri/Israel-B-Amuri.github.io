@@ -1,0 +1,144 @@
+:root {
+  --gradient-colors: {hsla(214, 92%, 47%, 1);
+
+  background: linear-gradient(225deg, hsla(214, 92%, 47%, 0.5) 0%, hsla(231, 85%, 24%, 1) 100%);
+  
+  background: -moz-linear-gradient(225deg, hsla(214, 92%, 47%, 0.5) 0%, hsla(231, 85%, 24%, 1) 100%);
+  
+  background: -webkit-linear-gradient(225deg, hsla(214, 92%, 47%, 0.5) 0%, hsla(231, 85%, 24%, 1) 100%);
+  
+  filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#0968e5", endColorstr="#091970", GradientType=1 );
+  }
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: #a49fb4;
+  box-sizing: border-box;
+  line-height: 1;
+  font-size: 1.2rem;
+}
+a {
+  color: #fff;
+  text-decoration: none;
+}
+#nav-list li {
+  list-style: none;
+  margin: 0px 50px 0px 0px;
+  font-size: 1.5rem;
+  padding: 10px;
+}
+#nav-list li:hover {
+  font-weight: bold;
+}
+.intro {
+  grid-area: intro;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  width: 50%;
+}
+#nav-bar {
+  background: #002d62;
+  padding: 10px;
+}
+#nav-list {
+  display: flex;
+  justify-content: right;
+  align-items: center;
+}
+#profile-pic {
+  max-width: 200px;
+  border-radius: 50%;
+  border: 2px solid;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25),
+    0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+#my-names {
+  margin-top: 20px;
+  font-size: 3vw;
+  color: #a49fb4;
+  text-transform: uppercase;
+  -webkit-text-stroke: 0.05vw #002d62;
+  position: relative;
+}
+#my-names::before {
+  content: attr(data-text);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  color: #6c98e9cc;
+  -webkit-text-stroke: 0vw #002d62;
+  border-right: 1px solid #276cc7;
+  overflow: hidden;
+  animation: nameAnimation 6s linear infinite;
+}
+#intro-section {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-evenly;
+}
+#description {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+}
+#short-account {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  width: 300px;
+  border-radius: 8px;
+  background: #bed5ffcc;
+  padding: 30px 10px;
+}
+#background-shadow {
+  border-radius: 8px;
+  background: #002d62;
+  width: 300px;
+  height: 120px;
+  padding: 10px 0px 0px 20px;
+  margin-top: 15px;
+}
+#about-me{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+  margin: auto;
+  padding: 20px;
+}
+#about-heading{
+display: flex;
+justify-content: center;
+align-items: center;
+margin-bottom: 10px;
+}
+.social-media-icons {
+  color: #73c2fb;
+}
+.skills{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+@keyframes nameAnimation {
+  0%,
+  10%,
+  100% {
+    width: 0;
+  }
+  70%,
+  90% {
+    width: 100%;
+  }
+}
