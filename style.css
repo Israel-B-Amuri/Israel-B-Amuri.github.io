@@ -150,6 +150,13 @@ margin-bottom: 10px;
 .skills li{
   list-style: none;
 }
+.my-projects{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+  background-color: #002d62;
+}
 @keyframes nameAnimation {
   0%,
   10%,
