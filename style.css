@@ -151,11 +151,12 @@ margin-bottom: 10px;
 .skills li{
   list-style: none;
 }
-.my-projects{
+#my-projects{
   display: flex;
   justify-content: center;
   align-items: center;
   width: 90%;
+  height: 50vh;
   background-color: #002d62;
   margin: auto;
 }
