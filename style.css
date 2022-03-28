@@ -85,6 +85,7 @@ a {
   margin-top: 20px;
   display: flex;
   justify-content: space-evenly;
+  width: 100%;
 }
 #description {
   display: flex;
@@ -156,6 +157,10 @@ margin-bottom: 10px;
   align-items: center;
   width: 90%;
   background-color: #002d62;
+  margin: auto;
+}
+.project1{
+  background-image: url(images/IMG_0293.JPG);
 }
 @keyframes nameAnimation {
   0%,
