@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+      <h1 id="title">Nature Mothers</h1>
+      <p id="description">
+        We are trying to find out how many people really care for the
+        environment. So, kindly answer the questions as honest as possible.
+      </p>
+    </header>
+    <main>
+      <form id="survey-form">
+        <div class="form-content">
+          <label for="name" id="name-label" name="name">Full Name</label>
+          <input
+            type="text"
+            name="name"
+            placeholder="type in your names here"
+            id="name"
+          />
+        </div>
+        <div class="form-content">
+          <label for="email" id="email-label" name="email">Email</label>
+          <input
+            type="email"
+            name="email"
+            placeholder="enter your email adress here"
+            id="email"
+          />
+        </div>
+        <div class="form-content">
+          <label for="age" id="number-label" name="age">Age(optional)</label>
+          <input
+            type="number"
+            name="age"
+            placeholder="age"
+            min="1"
+            max="25"
+            s
+            id="number"
+          />
+        </div>
+      </form>
+      <section id="survey-section">
+        <p>How can you describe yourself with regards to the environment?</p>
+        <select name="select" id="dropdown">
+          <option value="caring" name="select">caring</option>
+          <option value="reckless" name="select">reckless</option>
+          <option
+            value="no-idea"
+            name="select
+        "
+          >
+            No idea
+          </option>
+        </select>
+        <form action="#">
+          <div class="form-content">
+            <p>
+              Which of the following parts of nature do you like?(<strong
+                >One</strong
+              >
+              answer only)
+            </p>
+            <label for="mountains">Mountains</label>
+            <input type="radio" name="parts" value="mountains" />
+            <label for="forest">Forest</label>
+            <input type="radio" name="parts" value="forest" />
+            <label for="rivers">Rivers</label>
+            <input type="radio" name="parts" value="rivers" />
+          </div>
+          <div class="form-content">
+            <p>
+              Which of the activities do you like doing in nature?
+              <em>You can chose more than one answer</em>
+            </p>
+            <label for="hiking" name="activities">Hiking</label>
+            <input type="checkbox" name="activities" value="hiking" />
+            <label for="fishing" name="activities">Fishing</label>
+            <input type="checkbox" name="activities" value="fishing" />
+            <label for="walking" name="activities">Walking</label>
+            <input type="checkbox" name="activities" value="walking" />
+            <label for="camping" name="activities">Camping</label>
+            <input type="checkbox" name="activities" value="camping" />
+          </div>
+          <div class="form-content">
+            <p>What do you do in order to take care of nature?</p>
+            <label for="recycling" name="action">Recycle</label>
+            <input type="checkbox" name="action" value="recycle" />
+            <label for="pick-up" name="action">I pick up rubish</label>
+            <input type="checkbox" name="action" value="pick-up" />
+            <label for="other" name="action">Other</label>
+            <input type="checkbox" name="action" value="other" />
+          </div>
+          <div class="form-content">
+            <p>
+              If you checked <q>other</q> to the above question, please specify
+              below.
+            </p>
+            <textarea
+              name="action"
+              cols="30"
+              rows="3"
+              placeholder="specify here"
+            ></textarea>
+          </div>
+          <div class="form-content">
+            <p>
+              Thanks for your participation, kindly rate our survey on the range
+              of 1 to 5. And please write your suggestions down so that we can
+              be able to improve it.
+            </p>
+            <textarea
+              name="feedback"
+              id="feedback"
+              cols="30"
+              rows="3"
+              placeholder="Write your feedback here"
+            ></textarea>
+          </div>
+        </form>
+      </section>
+    </main>
+  </body>
+</html>

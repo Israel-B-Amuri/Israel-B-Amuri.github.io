@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1 id="title">Nature Mothers</h1>
+      <p id="description">
+        We are trying to find out how many people really care about the
+        environment. So, kindly answer the questions as honest as possible.
+      </p>
+    </header>
+    <main>
+      <form id="survey-form">
+        <div class="form-content">
+          <label for="name" id="name-label" name="name">Full Name</label>
+          <input
+            type="text"
+            name="name"
+            placeholder="type in your names here"
+            id="name"
+          />
+        
+          <label for="email" id="email-label" name="email">Email</label>
+          <input
+            type="email"
+            name="email"
+            placeholder="enter your email adress here"
+            id="email"
+          />
+
+      
+          <label for="age" id="number-label" name="age">Age(optional)</label>
+          <input
+            type="number"
+            name="age"
+            placeholder="age"
+            min="1"
+            max="25"
+            s
+            id="number"
+          />
+        </div>
+      <section id="survey-section">
+        <div class="form-content">
+        <p>How can you describe yourself with regards to the environment?</p>
+        <select name="select" id="dropdown">
+          <option value="caring" name="select">caring</option>
+          <option value="reckless" name="select">reckless</option>
+          <option
+            value="no-idea"
+            name="select
+        "
+          >
+            No idea
+          </option>
+        </select>
+      </div>
+          <div class="form-content">
+            <p>
+              Which of the following parts of nature do you like?(<strong
+                >One</strong
+              >
+              answer only)
+            </p>
+            <label for="mountains"> 
+              <input type="radio" name="parts" value="mountains" id="mountains"/>Mountains
+            </label>
+            <label for="forest"> 
+              <input type="radio" name="parts" value="forest" id="forest"/>Forest
+            </label>
+     
+            <label for="rivers"> 
+              <input type="radio"  name="parts" value="rivers" id="rivers"/>Rivers
+            </label>
+            
+          </div>
+          <div class="form-content">
+            <p>
+              Which of the activities do you like doing in nature?
+              <em>You can chose more than one answer</em>
+            </p>
+            <label for="hiking" name="activities">
+            <input type="checkbox" name="activities" value="hiking" id="hiking"/>
+            Hiking
+          </label>
+           <label for="fishing" name="activities">
+            <input type="checkbox" name="activities" value="fishing" id="fishing"/>
+            Fishing
+          </label>
+          <label for="walking" name="activities">
+            <input type="checkbox" name="activities" value="walking" id="walking"/>
+           Walking
+          </label>
+           <label for="camping" name="activities">
+            <input type="checkbox" name="activities" value="camping" id="camping"/>
+         Camping</label>
+          </div>
+          <div class="form-content">
+            <p>What do you do in order to take care of nature?</p>
+            <label for="recycling" name="action">
+              <input type="checkbox" name="action" value="recycle" id="recycling"/>
+              Recycle
+            </label>
+            <label for="pick-up" name="action">
+              <input type="checkbox" name="action" value="pick-up" id="pick-up"/>I pick up rubish
+            </label>
+            
+            <label for="other" name="action">   <input type="checkbox" name="action" value="other" id="other"/>Other
+            </label>
+      
+          </div>
+          <div class="form-content">
+            <p>
+              If you checked <q>other</q> to the above question, please specify
+              below.
+            </p>
+            <textarea
+              name="action"
+              cols="30"
+              rows="3"
+              placeholder="specify here"
+            ></textarea>
+          </div>
+          <div class="form-content">
+            <p>
+              Thanks for your participation, kindly rate our survey on the range
+              of 1 to 5. And please write your suggestions down so that we can
+              be able to improve it.
+            </p>
+            <textarea
+              name="feedback"
+              id="feedback"
+              cols="30"
+              rows="3"
+              placeholder="Write your feedback here"
+            ></textarea>
+          </div>
+          <div class="form-content">
+          <button id="submit">Submit</button>
+        </div>
+        </form>
+      </section>
+    </main>
+  </body>
+</html>

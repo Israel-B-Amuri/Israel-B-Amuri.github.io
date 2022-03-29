@@ -1,0 +1,250 @@
+body {
+  margin: 0;
+  padding: 0;
+  font: 1em;
+  background: #f4f4f4;
+  font-family: Helvetica, sans-serif;
+}
+header {
+  background: rgb(199, 107, 2);
+  color: #fff;
+  margin: auto;
+}
+
+h1 {
+  margin: 0;
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+ul #nav-list li {
+  padding: 10px;
+  font-size: 1.6rem;
+  list-style: none;
+  width: auto;
+}
+
+a {
+  text-decoration: none;
+}
+footer {
+  text-align: center;
+  font-size: 1.4rem;
+  padding: 25;
+  background: orange;
+}
+button {
+  background: rgb(199, 107, 2);
+  color: #fff;
+}
+aside form {
+  padding: 10px 0px;
+  margin: 10px 0px;
+  display: flex;
+  flex-direction: column;
+}
+aside form input {
+  margin: 10px 0px;
+}
+#nav-list {
+  display: flex;
+}
+#nav-list li a {
+  color: #ccc;
+}
+#nav-list li a:hover {
+  color: #aaa;
+  font-weight: bold;
+}
+#logo {
+  width: 60%;
+  height: 100%;
+  margin-top: 15px;
+  color: #ccc;
+}
+#navbar {
+  width: 40%;
+  height: 100%;
+}
+#showcase {
+  text-align: center;
+  font-size: 2rem;
+  background-image: url(images/showcase\ bac.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 250px;
+  background-position-y: center;
+  padding: 35px;
+  color: rgb(49, 49, 83);
+}
+#showcase h2 {
+  margin: 0;
+}
+
+#subscription {
+  text-align: left;
+  margin: 10px;
+  padding: 15px;
+  font-size: 1.5rem;
+}
+
+#sub-main {
+  display: flex;
+  flex-direction: row;
+  margin-top: 15px;
+}
+
+#ourStory {
+  background: rgba(246, 153, 31, 0.904);
+  color: #001;
+  text-align: center;
+  font-size: 1.4rem;
+}
+#ourStoryRead {
+  background: rgb(246, 153, 31, 0.904);
+  color: #001;
+  border-radius: 10%;
+}
+#ourVission {
+  background: rgb(245, 164, 13);
+  color: #001;
+  text-align: center;
+  font-size: 1.4rem;
+}
+#ourVissionRead {
+  background: rgb(245, 164, 13);
+  color: #001;
+  border-radius: 10%;
+}
+#main-page-image {
+  width: 100%;
+  text-align: center;
+}
+#bottom-showcase {
+  text-align: center;
+  margin-top: 10px;
+}
+#specialOfferPar {
+  font-size: 2.8rem;
+  color: black;
+}
+#big {
+  font-weight: bold;
+}
+#down-part {
+  display: flex;
+  background: orange;
+}
+#pricing-showcase {
+  background-image: url("images/showcase\ bac.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+  font-size: 2rem;
+  min-height: 250px;
+  background-position-y: center;
+  padding: 35px;
+  color: #002;
+}
+#booking-n-pricing {
+  display: flex;
+  margin: 15px;
+}
+#pricing-container {
+  display: flex;
+  width: 80%;
+  height: 100%;
+}
+
+#main {
+  display: flex;
+}
+#contact-personels {
+  display: flex;
+  width: 80%;
+  height: 100%;
+}
+#in-touch {
+  text-align: center;
+}
+
+.staffs {
+  width: 33%;
+  margin: 10px;
+}
+
+.pricing {
+  width: 30%;
+  height: 100%;
+  border-radius: 50%;
+}
+
+.content {
+  width: 30%;
+  height: 100%;
+  margin: auto;
+}
+
+.logo-decoration {
+  color: rgb(32, 31, 31);
+}
+.container {
+  display: flex;
+  margin: auto;
+  padding: 10px;
+}
+.subtitle {
+  text-align: center;
+  font-size: 3rem;
+  margin: 0;
+  padding: 10px;
+}
+.column {
+  padding: 10px;
+  margin: 10px;
+}
+.box {
+  width: 50%;
+  height: 100%;
+  margin: 20px;
+}
+.personels {
+  font-size: 1.3rem;
+}
+
+@media (max-width: 600px) {
+  body {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .container {
+    flex-direction: column;
+  }
+  #nav-list {
+    flex-direction: column;
+    width: 100%;
+  }
+  #nav-list li {
+    font-size: 0.5rem;
+  }
+  #sub-main {
+    flex-direction: column;
+    text-align: center;
+  }
+  #showcase {
+    box-sizing: border-box;
+  }
+  #booking-n-pricing {
+    flex-direction: column;
+  }
+  #pricing-container {
+    flex-direction: column;
+    text-align: center;
+  }
+  #main {
+    flex-direction: column;
+  }
+  #contact-personels {
+    flex-direction: column;
+  }
+}
