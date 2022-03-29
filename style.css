@@ -161,20 +161,22 @@ margin-bottom: 10px;
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 90%;
+  width: 90vw;
   height: 50vh;
   margin: auto;
+  padding: 25px;
+
 }
 .project{
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   height: 50vh;
+  width: 60%;
   border-radius: 10px;
   cursor: pointer;
-  flex: .3;
-  width: 200px;
-  margin: 10px;
+  flex: 0.8;
+  margin: 0px 10px;
   box-shadow:  6px 22px 38px -3px rgba(89,83,83,0.71);
   -webkit-box-shadow: 6px 22px 38px -3px rgba(89,83,83,0.71);
   -moz-box-shadow: 6px 22px 38px -3px rgba(89,83,83,0.71);;
@@ -190,15 +192,16 @@ margin-bottom: 10px;
 }
 .current{
   flex: 5;
+  width: 80%;
 }
 .button{
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 50vh
+  height: 50vh;
 }
 .button button{
-  width: 100px;
+  width: 5em;
   height: 10vh;
   border: none;
   border-radius: 10px;
