@@ -1,5 +1,5 @@
-const projectSection = document.querySelectorAll(".project");
-projectSection.forEach((project) => {
+const projects = document.querySelectorAll(".project");
+projects.forEach((project) => {
   project.addEventListener("click", () => {
     removeActiveClasses();
     project.classList.add("current");
@@ -7,7 +7,7 @@ projectSection.forEach((project) => {
 });
 
 function removeActiveClasses() {
-  projectSection.forEach((project) => {
+  projects.forEach((project) => {
     project.classList.remove("current");
   });
 }
