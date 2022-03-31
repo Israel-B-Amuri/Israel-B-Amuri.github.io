@@ -28,6 +28,11 @@ a {
   color: #fff;
   text-decoration: none;
 }
+label,input,textarea{
+  font-size: 1rem;
+  padding: 5px;
+}
+
 #nav-list li {
   list-style: none;
   margin: 0px 50px 0px 0px;
@@ -229,11 +234,19 @@ margin-bottom: 10px;
 .sub-heading{
   font-size: 1.3rem;
   padding: 8px;
+  text-align: center;
 }
 .get-touch{
   width: 50%;
   display: flex;
   flex-direction: column;
+}
+.user-input{
+  border: 2px #73c2fb solid;
+  border-radius: 5px;
+}
+.user-input:focus{
+  border: 0px;
 }
 @keyframes nameAnimation {
   0%,
