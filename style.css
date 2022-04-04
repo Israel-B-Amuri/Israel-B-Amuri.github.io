@@ -1,18 +1,3 @@
-:root {
-  --gradient-colors: {hsla(214, 92%, 47%, 1);
-
-  background: linear-gradient(225deg, hsla(214, 92%, 47%, 0.5) 0%, hsla(231, 85%, 24%, 1) 100%);
-  
-  background: -moz-linear-gradient(225deg, hsla(214, 92%, 47%, 0.5) 0%, hsla(231, 85%, 24%, 1) 100%);
-  
-  background: -webkit-linear-gradient(225deg, hsla(214, 92%, 47%, 0.5) 0%, hsla(231, 85%, 24%, 1) 100%);
-  
-  filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#0968e5", endColorstr="#091970", GradientType=1 );
-  }
-  --light-blue:{
-    background:#bdd4ffcc;
-  }
-}
 * {
   margin: 0;
   padding: 0;
@@ -23,6 +8,7 @@ body {
   box-sizing: border-box;
   line-height: 1;
   font-size: 1.2rem;
+  height: -100vh;
 }
 a {
   color: #fff;
@@ -59,6 +45,7 @@ label,input,textarea{
   justify-content: right;
   align-items: center;
 }
+
 #profile-pic {
   max-width: 200px;
   border-radius: 50%;
@@ -67,7 +54,7 @@ label,input,textarea{
 }
 #my-names {
   margin-top: 20px;
-  font-size: 3vw;
+  font-size: 2rem;
   color: #a49fb4;
   text-transform: uppercase;
   -webkit-text-stroke: 0.05vw #002d62;
@@ -89,7 +76,7 @@ label,input,textarea{
 #intro-section {
   margin-top: 20px;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
   width: 100%;
 }
 #description {
