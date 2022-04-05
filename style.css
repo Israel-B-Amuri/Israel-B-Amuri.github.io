@@ -319,6 +319,7 @@ margin-bottom: 10px;
   }
   .menu-button[aria-expanded ="true"]{
     background-image: url(images/multiply.svg);
+    position: fixed;
   }
   #intro-section{
     flex-direction: column;
