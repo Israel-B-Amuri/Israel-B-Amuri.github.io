@@ -341,4 +341,7 @@ margin-bottom: 10px;
   .menu-button{
     display: none;
   }
+  .nav-icon{
+    display: none;
+  }
 }
