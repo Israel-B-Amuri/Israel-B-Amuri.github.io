@@ -49,6 +49,6 @@ const navigation = document.querySelectorAll(".highlight");
 navigation.forEach((item) => {
   item.addEventListener("click", function () {
     let navLink = document.getElementById(item.getAttribute("data-link"));
-    navLink.scrollIntoView({ behavior: "smooth", block: "start" });
+    navLink.scrollIntoView({ behavior: "smooth", block: "center" });
   });
 });
