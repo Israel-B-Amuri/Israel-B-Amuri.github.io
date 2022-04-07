@@ -1,10 +1,16 @@
-const projects = document.querySelectorAll(".project");
-projects.forEach((project) => {
-  project.addEventListener("click", () => {
-    removeActiveClasses();
-    project.classList.add("current");
+// navigation on click scrolling
+
+const navScrolling = document.querySelectorAll("highlight");
+
+navScrolling.addEventListener("click", function () {
+  window.scrollTo({
+    top: 10,
+    left: 0,
+    behavior: "smooth",
   });
 });
+
+// project onclick annimation
 
 function removeActiveClasses() {
   projects.forEach((project) => {
@@ -28,4 +34,16 @@ navButton.addEventListener("click", () => {
     navBar.setAttribute("data-visible", false);
     navButton.setAttribute("aria-expanded", false);
   }
+});
+
+//Scroll button codes
+
+const scrollButton = document.querySelector("#scroll-button");
+
+scrollButton.addEventListener("click", function () {
+  window.scrollTo({
+    top: 0,
+    left: 0,
+    behavior: "smooth",
+  });
 });
