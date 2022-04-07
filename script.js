@@ -1,16 +1,10 @@
-// navigation on click scrolling
-
-const navScrolling = document.querySelectorAll("highlight");
-
-navScrolling.addEventListener("click", function () {
-  window.scrollTo({
-    top: 10,
-    left: 0,
-    behavior: "smooth",
+const projects = document.querySelectorAll(".project");
+projects.forEach((project) => {
+  project.addEventListener("click", () => {
+    removeActiveClasses();
+    project.classList.add("current");
   });
 });
-
-// project onclick annimation
 
 function removeActiveClasses() {
   projects.forEach((project) => {
@@ -45,5 +39,16 @@ scrollButton.addEventListener("click", function () {
     top: 0,
     left: 0,
     behavior: "smooth",
+  });
+});
+
+// Navigation scrollings
+
+const navigation = document.querySelectorAll(".highlight");
+
+navigation.forEach((item) => {
+  item.addEventListener("click", function () {
+    let navLink = document.getElementById(item.getAttribute("data-link"));
+    navLink.scrollIntoView({ behavior: "smooth", block: "start" });
   });
 });
