@@ -15,7 +15,7 @@ function removeActiveClasses() {
 /*  a function that access the elements
  within the nav-bar on mobile phones and tablets*/
 
-const navBar = document.querySelector(".nav-list");
+const navBar = document.querySelector(".nav-list-active");
 const navButton = document.querySelector(".menu-button");
 
 navButton.addEventListener("click", () => {
@@ -51,4 +51,19 @@ navigation.forEach((item) => {
     let navLink = document.getElementById(item.getAttribute("data-link"));
     navLink.scrollIntoView({ behavior: "smooth", block: "center" });
   });
+});
+
+//Nav bar activity
+
+const navActivity = document.querySelector(".nav-list-active");
+
+let lastPosition = window.screenY;
+
+window.addEventListener("scroll", () => {
+  if (lastPosition < window.scrollY) {
+    navBar.setAttribute("data-visible", false);
+    navButton.setAttribute("aria-expanded", false);
+  } else {
+    lastPosition = window.scrollY;
+  }
 });
