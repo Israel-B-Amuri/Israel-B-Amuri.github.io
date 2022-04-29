@@ -19,6 +19,7 @@ body {
 a {
   color: #fff;
   text-decoration: none;
+  cursor: pointer;
 }
 header{
   background: var(--dark-blue);
@@ -28,13 +29,17 @@ label,input,textarea{
   font-size: 1rem;
   padding: 5px;
 }
-
+ul nav a{
+  cursor: pointer;
+}
 #nav-list li {
   list-style: none;
   margin: 0px 50px 0px 0px;
   font-size: 1.5rem;
   padding: 10px;
+
 }
+
 #nav-list li:hover {
   font-weight: bold;
 }
@@ -56,6 +61,7 @@ label,input,textarea{
   display: flex;
   justify-content: right;
   align-items: center;
+  cursor: pointer;
 }
 
 #profile-pic {
@@ -406,5 +412,13 @@ padding: 20px;
   }
   .get-touch{
     width: 50%;
+  }
+}
+@media (max-width:20em){
+  #short-account{
+    width: 290px;
+  }
+  #background-shadow{
+    width: 290px;
   }
 }
