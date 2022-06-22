@@ -375,7 +375,7 @@ padding: 20px;
   width: 100%;
 }
 .description{
-  width: 100%;
+  min-width: 100%;
 }
 .current{
   width: 90%;
@@ -416,9 +416,9 @@ padding: 20px;
 }
 @media (max-width:20em){
   #short-account{
-    width: 290px;
+    min-width: 290px;
   }
   #background-shadow{
-    width: 290px;
+    min-width: 290px;
   }
 }
